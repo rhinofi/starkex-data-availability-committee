@@ -1,4 +1,5 @@
-FROM ciimage/python:3.7
+# FROM ciimage/python:3.7
+FROM ciimage/python@sha256:5ccccb49bc7529ed8699d71667b484db2c3c6ec39cecf837c2351f68bba9c478
 
 RUN apt update
 RUN apt -y -o Dpkg::Options::="--force-overwrite" install python3.7-dev
