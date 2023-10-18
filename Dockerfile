@@ -14,4 +14,7 @@ RUN ./build.sh
 
 WORKDIR /app/
 
+RUN ls -al
+RUN chmod 777 .
+
 CMD ["/app/build/Release/src/starkware/committee/starkex_committee_exe"]
