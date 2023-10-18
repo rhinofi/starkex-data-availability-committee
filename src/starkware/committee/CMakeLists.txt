@@ -60,6 +60,11 @@ python_exe(starkex_committee_exe
     MODULE committee.committee
 )
 
+python_exe(dump_trees
+    VENV starkex_committee_venv
+    MODULE committee.dump_trees
+)
+
 # Tests.
 
 full_python_test(starkware_committee_test
